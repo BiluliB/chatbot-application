@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,26 +9,52 @@ namespace chatbot_application.Data
 {
     public class Storage
     {
-        /// <summary>
-        /// Generates a bot response based on user input.
-        /// </summary>
-        /// <param name="userInput">The user input.</param>
-        /// <returns>The bot response.</returns>
+        private Dictionary<string, string> responses;
+
+        public Storage()
+        {
+            LoadResponsesFromCSV();
+        }
+
+        private void LoadResponsesFromCSV()
+        {
+            responses = new Dictionary<string, string>();
+            string path = "./CsvImport/keywords.csv";
+            using (StreamReader reader = new StreamReader(path))
+            {
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    line = RemoveQuotes(line);  // Zeile bereinigen
+                    var values = line.Split(';');
+
+                    if (values.Length == 2)
+                    {
+                        string userInput = values[0].Trim().ToLower();
+                        string botResponse = values[1].Trim();
+                        responses[userInput] = botResponse;
+                    }
+                }
+            }
+        }
+
+        private string RemoveQuotes(string input)
+        {
+            return input.Replace("\"", "");
+        }
+
         public string GetResponse(string userInput, string userName)
         {
             userInput = userInput.ToLowerInvariant();
 
-            if (userInput.Contains("hallo") || userInput.Contains("hi") || userInput.Contains("hey"))
-                return $"Hallo {userName}, wie kann ich Ihnen heute helfen?";
+            string matchedKey = responses.Keys
+                .OrderByDescending(key => key.Length)
+                .FirstOrDefault(key => userInput.Contains(key));
 
-            if (userInput.Contains("tschüss") || userInput.Contains("ciao") || userInput.Contains("auf wiedersehen"))
-                return "Auf Wiedersehen! Wenn Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verfügung.";
-
-            if (userInput.Contains("uhrzeit") || userInput.Contains("zeit"))
-                return $"Die aktuelle Uhrzeit ist {DateTime.Now:HH:mm}.";
-
-            if (userInput.Contains("datum") || userInput.Contains("tag"))
-                return $"Heute ist der {DateTime.Now:dddd, dd. MMMM yyyy}.";
+            if (matchedKey != null)
+            {
+                return responses[matchedKey].Replace("{userName}", userName);
+            }
 
             return "Entschuldigung, ich verstehe das nicht. Könnten Sie das bitte klären?";
         }
