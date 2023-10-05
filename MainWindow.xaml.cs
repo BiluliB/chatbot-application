@@ -68,16 +68,9 @@ namespace chatbot_application
             UserInput.Clear();
             ChatHistory.Items.Add(new UserMessage { Text = userInput });
 
-            string botResponse = botEngine.ProcessInput(userInput);
-
-            if (botEngine.IsWaitingForLocation)
-            {
-                botResponse = await botEngine.GetWeatherAsync(userInput);
-                botEngine.IsWaitingForLocation = false;
-            }
+            string botResponse = await botEngine.ProcessInput(userInput);
 
             ChatHistory.Items.Add(new BotMessage { Text = botResponse });
-
 
             // Scroll to latest message
             if (VisualTreeHelper.GetChildrenCount(ChatHistory) > 0)
