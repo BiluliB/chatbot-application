@@ -9,6 +9,20 @@ namespace chatbot_application
     {
         private readonly string apiKey;
         private bool isWaitingForLocation = false;
+        private string _username;
+
+        public string UserName
+        {
+            get { return _username; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Der Name darf nicht leer sein.");
+                }
+                _username = value;
+            }
+        }
 
         public BotEngine(string apiKey)
         {
@@ -21,6 +35,26 @@ namespace chatbot_application
             set { isWaitingForLocation = value; }
         }
 
+        public string ProcessInput(string userInput)
+        {
+            if (string.IsNullOrEmpty(_username))
+            {
+                try
+                {
+                    UserName = userInput;
+                    return $"Hallo {UserName}, wie kann ich Ihnen heute helfen?";
+                }
+                catch (ArgumentException)
+                {
+                    return "Bitte geben Sie einen gültigen Namen ein.";
+                }
+            }
+
+            // Die restliche Bot-Logik, die auf das userInput reagiert, kommt hier hin...
+            return GetBotResponse(userInput);
+        }
+
+
         /// <summary>
         /// Generates a bot response based on user input.
         /// </summary>
@@ -31,7 +65,7 @@ namespace chatbot_application
             userInput = userInput.ToLowerInvariant();
 
             if (userInput.Contains("hallo") || userInput.Contains("hi") || userInput.Contains("hey"))
-                return "Hallo! Wie kann ich Ihnen heute helfen?";
+                return $"Hallo {UserName}, wie kann ich Ihnen heute helfen?";
 
             if (userInput.Contains("tschüss") || userInput.Contains("ciao") || userInput.Contains("auf wiedersehen"))
                 return "Auf Wiedersehen! Wenn Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verfügung.";

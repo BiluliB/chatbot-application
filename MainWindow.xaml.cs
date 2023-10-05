@@ -29,8 +29,16 @@ namespace chatbot_application
                 .AddJsonFile("appsettings.json")
                 .Build();
 
+            this.Loaded += MainWindow_Loaded;
+
             botEngine = new BotEngine(configuration["OpenWeatherMapApiKey"]);
         }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            ChatHistory.Items.Add(new BotMessage { Text = "Hallo! Wie darf ich Sie nennen?" });
+        }
+
 
         /// <summary>
         /// Handles the KeyDown event of the UserInput control.
@@ -60,18 +68,16 @@ namespace chatbot_application
             UserInput.Clear();
             ChatHistory.Items.Add(new UserMessage { Text = userInput });
 
-            string botResponse;
+            string botResponse = botEngine.ProcessInput(userInput);
+
             if (botEngine.IsWaitingForLocation)
             {
                 botResponse = await botEngine.GetWeatherAsync(userInput);
                 botEngine.IsWaitingForLocation = false;
             }
-            else
-            {
-                botResponse = botEngine.GetBotResponse(userInput);
-            }
 
             ChatHistory.Items.Add(new BotMessage { Text = botResponse });
+
 
             // Scroll to latest message
             if (VisualTreeHelper.GetChildrenCount(ChatHistory) > 0)
