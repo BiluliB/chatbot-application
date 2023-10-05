@@ -7,6 +7,46 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <ListBox Name="ChatHistory" Grid.Row="0" Margin="10">
+            <ListBox.Resources>
+                <DataTemplate DataType="{x:Type local:UserMessage}">
+                    <TextBlock Margin="5" Foreground="Blue">
+                     <Run FontWeight="Bold" Text="User: "/>
+                     <Run Text="{Binding Text}"/>
+                    </TextBlock>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type local:BotMessage}">
+                    <TextBlock Margin="5" Foreground="Green">
+                     <Run FontWeight="Bold" Text="Bot: "/>
+                     <Run Text="{Binding Text}"/>
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.Resources>
+        </ListBox>
+
+        <Grid Grid.Row="1" Margin="10,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="UserInput" 
+                  Grid.Column="0" 
+                  TextWrapping="Wrap" 
+                  Text="" 
+                  Margin="0,0,0,10"
+                  KeyDown="UserInput_KeyDown" />
+
+            <Button Content="Send" 
+                 Grid.Column="1" 
+                 Width="87" 
+                 Margin="10,0,0,10" 
+                 Click="SendButton_Click"   />
+        </Grid>
     </Grid>
 </Window>
