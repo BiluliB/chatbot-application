@@ -1,59 +1,53 @@
-﻿using System;
+﻿using chatbot_application.Data.Model;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace chatbot_application.Data
 {
     public class Storage
     {
-        private Dictionary<string, string> responses;
+        public List<Message> Messages { get; private set; } = new List<Message>();
 
         public Storage()
         {
-            LoadResponsesFromCSV();
+            Load();
         }
 
-        private void LoadResponsesFromCSV()
+        private void Load()
         {
-            responses = new Dictionary<string, string>();
             string path = "./CsvImport/keywords.csv";
             using (StreamReader reader = new StreamReader(path))
             {
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                    line = RemoveQuotes(line);  // Zeile bereinigen
                     var values = line.Split(';');
 
                     if (values.Length == 2)
                     {
-                        string userInput = values[0].Trim().ToLower();
-                        string botResponse = values[1].Trim();
-                        responses[userInput] = botResponse;
+                        Messages.Add(new Message
+                        {
+                            Keyword = values[0].Trim('"').ToLower(),
+                            Answer = values[1].Trim('"')
+                        });
                     }
                 }
             }
-        }
-
-        private string RemoveQuotes(string input)
-        {
-            return input.Replace("\"", "");
         }
 
         public string GetResponse(string userInput, string userName)
         {
             userInput = userInput.ToLowerInvariant();
 
-            string matchedKey = responses.Keys
-                .OrderByDescending(key => key.Length)
-                .FirstOrDefault(key => userInput.Contains(key));
+            // Suche nach einem Schlüsselwort im userInput, wobei längere Schlüsselwörter zuerst kommen
+            var matchedMessage = Messages
+                .OrderByDescending(m => m.Keyword.Length)
+                .FirstOrDefault(m => userInput.Contains(m.Keyword));
 
-            if (matchedKey != null)
+            if (matchedMessage != null)
             {
-                return responses[matchedKey].Replace("{userName}", userName);
+                return matchedMessage.Answer.Replace("{userName}", userName);
             }
 
             return "Entschuldigung, ich verstehe das nicht. Könnten Sie das bitte klären?";
