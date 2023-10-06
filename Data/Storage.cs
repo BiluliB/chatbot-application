@@ -1,4 +1,5 @@
 ﻿using chatbot_application.Data.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,15 +18,29 @@ namespace chatbot_application.Data
         private void Load()
         {
             string path = "./CsvImport/keywords.csv";
+
+            if (!File.Exists(path))
+            {
+                throw new FileNotFoundException($"Die CSV-Datei {path} wurde nicht gefunden.");
+            }
+
             using (StreamReader reader = new StreamReader(path))
             {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    var values = line.Split(';');
+                int lineNumber = 0;
 
-                    if (values.Length == 2)
+                try
+                {
+                    while (!reader.EndOfStream)
                     {
+                        lineNumber++;
+                        var line = reader.ReadLine();
+                        var values = line.Split(';');
+
+                        if (values.Length != 2)
+                        {
+                            throw new InvalidDataException($"Ungültiges Datenformat in der Csv-Datei. Zeile: {lineNumber}. \nErwartet 2 Werte, aber gefunden {values.Length}.");
+                        }
+
                         Messages.Add(new Message
                         {
                             Keyword = values[0].Trim('"').ToLower(),
@@ -33,21 +48,24 @@ namespace chatbot_application.Data
                         });
                     }
                 }
+                catch (Exception ex)
+                {
+                    System.Windows.MessageBox.Show(ex.Message, "Fehler", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                    throw new Exception($"Fehler beim Lesen der CSV-Datei in Zeile {lineNumber}.", ex);
+                }
             }
         }
-
         public string GetResponse(string userInput, string userName)
         {
             userInput = userInput.ToLowerInvariant();
 
-            // Suche nach einem Schlüsselwort im userInput, wobei längere Schlüsselwörter zuerst kommen
             var matchedMessage = Messages
                 .OrderByDescending(m => m.Keyword.Length)
                 .FirstOrDefault(m => userInput.Contains(m.Keyword));
 
             if (matchedMessage != null)
             {
-                return matchedMessage.Answer.Replace("{userName}", userName);
+                return matchedMessage.GetProcessedAnswer(userName);
             }
 
             return "Entschuldigung, ich verstehe das nicht. Könnten Sie das bitte klären?";

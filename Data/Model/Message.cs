@@ -10,5 +10,22 @@ namespace chatbot_application.Data.Model
     {
         public string Keyword { get; set; }
         public string Answer { get; set; }
+
+        public string GetProcessedAnswer(string userName)
+        {
+            string processedAnswer = this.Answer;
+
+            if (processedAnswer.Contains("{time}"))
+            {
+                processedAnswer = processedAnswer.Replace("{time}", DateTime.Now.ToString("HH:mm"));
+            }
+
+            if (processedAnswer.Contains("{userName}"))
+            {
+                processedAnswer = processedAnswer.Replace("{userName}", userName);
+            }
+
+            return processedAnswer;
+        }
     }
 }

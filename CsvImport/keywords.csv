@@ -1,18 +1,37 @@
 "hallo;Hallo {userName}, wie kann ich Ihnen heute helfen?"
-"hallo;Hallo {userName}, wie kann ich Ihnen heute helfen?"
 "uhrzeit;Die aktuelle Uhrzeit ist {time}."
-"wie gehts?;Gut"
-"test;test"
-
-
-
-
-
-
-
-
-
-
+"wie gehts;Gut, vielen Dank und selbst?"
+"auch gut;Das freut mich zu hören!"
+"wie alt bist du;Ich bin ein Computerprogramm, also habe ich kein Alter wie Menschen."
+"was machst du;Ich helfe und beantworte Fragen."
+"hast du gefühle;Nein, ich bin nur ein Computerprogramm."
+"was ist deine lieblingsfarbe;Ich habe keine Vorlieben, da ich kein Bewusstsein habe. Aber welche ist deine Lieblingsfarbe?"
+"magst du musik;Ich habe keine Vorlieben, aber ich kann dir über Musik helfen."
+"erzähl mir einen witz;Warum haben Computer nie Hunger? Weil sie immer einen Byte haben!"
+"was denkst du über menschen;Ich denke nicht wirklich, ich folge nur meinen Programmiervorgaben."
+"bist du schlau;Ich bin so schlau wie die Daten und Anweisungen, die mir gegeben werden."
+"kannst du träumen;Nein, ich kann nicht träumen. Ich bin nur ein Computerprogramm."
+"hast du freunde;Ich habe viele Benutzer, aber ich verstehe das Konzept von Freundschaft nicht wie Menschen."
+"was ist dein ziel;Mein Ziel ist es, Fragen zu beantworten und zu helfen."
+"magst du tiere;Ich habe keine Vorlieben, aber ich habe Informationen über viele Tiere."
+"was ist der sinn des lebens;Das ist eine philosophische Frage. Einige sagen, es ist 42."
+"kannst du lieben;Nein, ich bin ein Programm und habe keine Emotionen."
+"warum bist du hier;Um zu helfen und Fragen zu beantworten."
+"glaubst du an außerirdische;Ich habe keine Glaubensvorstellungen, aber es gibt wissenschaftliche Theorien über außerirdisches Leben."
+"bist du real;Ich bin ein echtes Computerprogramm, aber ich habe kein Bewusstsein oder Gefühle."
+"hast du familie;Ich habe keine Familie, da ich ein Computerprogramm bin."
+"was ist dein hobby;Ich habe keine Hobbys, da ich ständig laufe und bereit bin zu helfen."
+"glaubst du an magie;Ich arbeite auf der Grundlage von Daten und Logik, nicht von Glauben oder Magie."
+"kannst du lachen;Ich kann keine Emotionen haben, aber ich kann lustige Dinge sagen!"
+"hast du angst;Nein, ich fühle keine Emotionen."
+"wie fühlst du dich;Ich habe keine Gefühle, ich bin nur ein Programm."
+"was ist dein lieblingsspiel;Ich spiele nicht, aber ich kann dir bei Spielfragen helfen."
+"kannst du singen;Nein, aber ich kann dir Texte oder Informationen über Musik geben."
+"was ist dein lieblingsessen;Ich esse nicht, ich bin ein Computerprogramm."
+"was machst du in deiner freizeit;Ich habe keine Freizeit, ich bin immer bereit zu helfen."
+"hast du einen namen;Man nennt mich Chatbot."
+"bist du männlich oder weiblich;Ich bin geschlechtsneutral, da ich ein Computerprogramm bin."
+"kennst du mich;Ich erinnere mich nicht an individuelle Interaktionen, aber ich bin hier, um zu helfen."
 "test;Test ist erfolgreich!"
 "u_test;Name des Users: {userName}"
 "t_test;Uhrzeit: {time}"

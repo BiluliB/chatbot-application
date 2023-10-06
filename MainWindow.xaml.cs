@@ -64,6 +64,7 @@ namespace chatbot_application
         /// </summary>
         private async void SendMessage()
         {
+            try {
             string userInput = UserInput.Text;
             UserInput.Clear();
             ChatHistory.Items.Add(new UserMessage { Text = userInput });
@@ -71,7 +72,11 @@ namespace chatbot_application
             string botResponse = await botEngine.ProcessInput(userInput);
 
             ChatHistory.Items.Add(new BotMessage { Text = botResponse });
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ein Fehler ist aufgetreten: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             // Scroll to latest message
             if (VisualTreeHelper.GetChildrenCount(ChatHistory) > 0)
             {
