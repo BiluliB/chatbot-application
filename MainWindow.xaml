@@ -17,14 +17,14 @@
             <ListBox.Resources>
                 <DataTemplate DataType="{x:Type local:UserMessage}">
                     <TextBlock Margin="5" Foreground="Blue" TextWrapping="Wrap">
-<Run FontWeight="Bold" Text="User: "/>
-<Run Text="{Binding Text}"/>
+                    <Run FontWeight="Bold" Text="User: "/>
+                    <Run Text="{Binding Text}"/>
                     </TextBlock>
                 </DataTemplate>
                 <DataTemplate DataType="{x:Type local:BotMessage}">
                     <TextBlock Margin="5" Foreground="Green" TextWrapping="Wrap">
-<Run FontWeight="Bold" Text="Bot: "/>
-<Run Text="{Binding Text}"/>
+                    <Run FontWeight="Bold" Text="Bot: "/>
+                    <Run Text="{Binding Text}"/>
                     </TextBlock>
                 </DataTemplate>
             </ListBox.Resources>

@@ -7,6 +7,9 @@ using Newtonsoft.Json.Linq;
 using Microsoft.Extensions.Configuration;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.IO;
+using System.Text;
+
 
 namespace chatbot_application
 {
@@ -30,12 +33,52 @@ namespace chatbot_application
                 .Build();
 
             this.Loaded += MainWindow_Loaded;
+            this.Closed += MainWindow_Closed;
 
             botEngine = new BotEngine(configuration["OpenWeatherMapApiKey"]);
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainWindow_Closed(object sender, EventArgs e)
+        {
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var chatLogPath = Path.Combine(appDataPath, "chatbot_application", "chat_log.txt");
+
+            // Creating the directory, if not exist
+            Directory.CreateDirectory(Path.GetDirectoryName(chatLogPath));
+
+            var chatHistory = new StringBuilder();
+            foreach (var item in ChatHistory.Items)
+            {
+                chatHistory.AppendLine(item.ToString());
+            }
+
+            File.WriteAllText(chatLogPath, chatHistory.ToString());
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var chatLogPath = Path.Combine(appDataPath, "chatbot_application", "chat_log.txt");
+
+            if (File.Exists(chatLogPath))
+            {
+                var result = MessageBox.Show("Möchten Sie die letzte Sitzung fortsetzen?", "Fortsetzen?", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
+                {
+                    var chatHistory = File.ReadAllLines(chatLogPath);
+              
+                    foreach (var line in chatHistory)
+                    {
+                        ChatHistory.Items.Add(line);
+                    }
+                }
+            }
             ChatHistory.Items.Add(new BotMessage { Text = "Hallo! Wie darf ich Sie nennen?" });
         }
 
@@ -64,14 +107,15 @@ namespace chatbot_application
         /// </summary>
         private async void SendMessage()
         {
-            try {
-            string userInput = UserInput.Text;
-            UserInput.Clear();
-            ChatHistory.Items.Add(new UserMessage { Text = userInput });
+            try
+            {
+                string userInput = UserInput.Text;
+                UserInput.Clear();
+                ChatHistory.Items.Add(new UserMessage { Text = userInput });
 
-            string botResponse = await botEngine.ProcessInput(userInput);
+                string botResponse = await botEngine.ProcessInput(userInput);
 
-            ChatHistory.Items.Add(new BotMessage { Text = botResponse });
+                ChatHistory.Items.Add(new BotMessage { Text = botResponse });
             }
             catch (Exception ex)
             {
@@ -92,25 +136,29 @@ namespace chatbot_application
         }
     }
 
-    /// <summary>
-    /// Represents a user message.
-    /// </summary>
     public class UserMessage
     {
         /// <summary>
         /// Gets or sets the text of the user message.
         /// </summary>
         public string Text { get; set; }
+
+        public override string ToString()
+        {
+            return Text;
+        }
     }
 
-    /// <summary>
-    /// Represents a bot message.
-    /// </summary>
     public class BotMessage
     {
         /// <summary>
         /// Gets or sets the text of the bot message.
         /// </summary>
         public string Text { get; set; }
+
+        public override string ToString()
+        {
+            return Text;
+        }
     }
 }
