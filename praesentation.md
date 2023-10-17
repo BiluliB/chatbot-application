@@ -6,6 +6,7 @@
         - [Was macht es?](#was-macht-es)
     - [Hauptkomponenten](#hauptkomponenten)
         - [Kernbestandteile](#kernbestandteile)
+    - [Skizze](##skizze)
     - [UML-Diagramm](#uml-diagramm)
     - [Anpassung und Erweiterung](#anpassung-und-erweiterung)
     - [Abschluss](#abschluss)
@@ -39,6 +40,11 @@
 #### Kernbestandteile:
 - `App.xaml` und `App.xaml.cs`: Einstiegspunkt der Anwendung.
 - `MainWindow.xaml` und `MainWindow.xaml.cs`: Das Herzstück der Benutzeroberfläche und Logik.
+
+---
+
+### Skizze
+![Skizze](./ChatbotSkizze.png)
 
 ---
 
