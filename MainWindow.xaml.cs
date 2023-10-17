@@ -14,14 +14,14 @@ using System.Text;
 namespace chatbot_application
 {
     /// <summary>
-    /// Represents the main window of the application.
+    /// The main window for the chatbot application.
     /// </summary>
     public partial class MainWindow : Window
     {
         private BotEngine botEngine;
 
         /// <summary>
-        /// Initializes a new instance of the MainWindow class.
+        /// Initializes the main window.
         /// </summary>
         public MainWindow()
         {
@@ -40,7 +40,7 @@ namespace chatbot_application
         }
 
         /// <summary>
-        /// 
+        /// Handles the window closed event to save the chat history.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -61,6 +61,11 @@ namespace chatbot_application
             File.WriteAllText(chatLogPath, chatHistory.ToString());
         }
 
+        /// <summary>
+        /// Handles the window loaded event to load previous chat history or display an initial message.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
@@ -128,11 +133,6 @@ namespace chatbot_application
                 var scrollViewer = (ScrollViewer)VisualTreeHelper.GetChild(border, 0);
                 scrollViewer.ScrollToEnd();
             }
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 

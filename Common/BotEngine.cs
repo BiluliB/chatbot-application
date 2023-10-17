@@ -8,6 +8,9 @@ using System.IO;
 
 namespace chatbot_application
 {
+    /// <summary>
+    /// The engine that powers the bot's logic and processing.
+    /// </summary>
     public class BotEngine
     {
         private bool isWaitingForLocation = false;
@@ -16,12 +19,18 @@ namespace chatbot_application
         private readonly WeatherResponse weatherAPI;
         private readonly string csvFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CsvImport", "keywords.csv");
 
+        /// <summary>
+        /// Initializes a new instance of the BotEngine class with a specific API key.
+        /// </summary>
         public BotEngine(string apiKey)
         {
             this.storage = new Storage();
             this.weatherAPI = new WeatherResponse(apiKey);
         }
 
+        /// <summary>
+        /// Gets or sets the username.
+        /// </summary>
         public string UserName
         {
             get { return _username; }
@@ -35,14 +44,23 @@ namespace chatbot_application
             }
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether the bot is waiting for a location input from the user.
+        /// </summary>
         public bool IsWaitingForLocation
         {
             get { return isWaitingForLocation; }
             set { isWaitingForLocation = value; }
         }
 
+        /// <summary>
+        /// Default Response
+        /// </summary>
         private const string DefaultResponse = "Entschuldigung, ich verstehe das nicht. Könnten Sie das bitte klären?";
 
+        /// <summary>
+        /// Processes the user's input and returns the bot's response.
+        /// </summary>
         public async Task<string> ProcessInput(string userInput)
         {
             if (string.IsNullOrEmpty(_username))
@@ -76,15 +94,16 @@ namespace chatbot_application
                 return response;
             }
 
-            // Wenn keine passende Antwort gefunden wird oder die Antwort der Standardtext ist:
+            // If no appropriate response is found or the response is the default text:
             string[] questions = GetQuestionsFromCsv();
             var random = new Random();
             string randomSuggestion = questions[random.Next(questions.Length)];
             return $"Entschuldige {_username}, ich weiß nicht, was du meinst. Versuche es mit: {randomSuggestion}";
         }
 
-
-
+        /// <summary>
+        /// Retrieves questions from a CSV file.
+        /// </summary>
         private string[] GetQuestionsFromCsv()
         {
             var lines = File.ReadAllLines(csvFilePath);
@@ -102,9 +121,12 @@ namespace chatbot_application
             return questions.ToArray();
         }
 
+        /// <summary>
+        /// Synchronously retrieves the weather for a specific location.
+        /// </summary>
         public string GetWeather(string location)
         {
-            // Hier rufen wir die `GetWeatherAsync` Methode synchron auf
+            // Here we're calling the `GetWeatherAsync` method synchronously
             return weatherAPI.GetWeatherAsync(location).Result;
         }
     }

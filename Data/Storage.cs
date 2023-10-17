@@ -6,15 +6,28 @@ using System.Linq;
 
 namespace chatbot_application.Data
 {
+
+    /// <summary>
+    /// Provides functionality to load and query message-response pairs from a CSV file.
+    /// </summary>
     public class Storage
     {
+        /// <summary>
+        /// Gets the list of loaded messages from the CSV file.
+        /// </summary>
         public List<Message> Messages { get; private set; } = new List<Message>();
 
+        /// <summary>
+        /// Initializes a new instance of the Storage class and loads messages from the CSV file.
+        /// </summary>
         public Storage()
         {
             Load();
         }
 
+        /// <summary>
+        /// Loads messages from a specified CSV file into the Messages list.
+        /// </summary>
         private void Load()
         {
             string path = "./CsvImport/keywords.csv";
@@ -55,6 +68,13 @@ namespace chatbot_application.Data
                 }
             }
         }
+
+        /// <summary>
+        /// Returns an appropriate response based on the user's input, using the loaded messages.
+        /// </summary>
+        /// <param name="userInput">The user's input to find a matching response.</param>
+        /// <param name="userName">The user's name to personalize the response, if necessary.</param>
+        /// <returns>The bot's response based on the user's input.</returns>
         public string GetResponse(string userInput, string userName)
         {
             userInput = userInput.ToLowerInvariant();
