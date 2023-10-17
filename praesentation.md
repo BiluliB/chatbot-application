@@ -6,6 +6,7 @@
         - [Was macht es?](#was-macht-es)
     - [Hauptkomponenten](#hauptkomponenten)
         - [Kernbestandteile](#kernbestandteile)
+    - [UML-Diagramm](#uml-diagramm)
     - [Anpassung und Erweiterung](#anpassung-und-erweiterung)
     - [Abschluss](#abschluss)
         - [Leassons learnd](#leassons-learnd)
@@ -41,6 +42,12 @@
 
 ---
 
+### UML-Diagramm
+
+![UML-Diagramm](./UMLDiagram.png)
+
+---
+
 ### Anpassung und Erweiterung
 
 - Die Anwendung verwendet eine `appsettings.json`-Datei für verschiedene Konfigurationseinstellungen.
@@ -53,13 +60,13 @@
 
 ### Abschluss
 
-Leassons learnd:
+#### Leassons learnd:
 
 Während der Entwicklung der Chatbot-Anwendung haben wir wichtige Erkenntnisse gewonnen:
 Benutzerfreundlichkeit ist der Schlüssel: Eine intuitive Benutzeroberfläche fördert die Akzeptanz und Nutzung durch die Benutzer.
 Skalierbarkeit ist wichtig: Da Chatbots mit der Zeit immer intelligenter werden, muss die Architektur in der Lage sein, Erweiterungen und Upgrades zu unterstützen.
 Fehlerbehandlung: Es ist unerlässlich, eine robuste Fehlerbehandlung zu implementieren, da Benutzer eine Vielzahl unerwarteter Eingaben vornehmen können.
-Kontinuierliches Feedback: Regelmäßiges Testen half dabei, die Benutzererfahrung zu verfeinern und den Chatbot effektiver zu gestalten.
+Kontinuierliches Feedback: Regelmässiges Testen half dabei, die Benutzererfahrung zu verfeinern und den Chatbot effektiver zu gestalten.
 Integration von Drittanbietern: Die Integration von externen Diensten (z. B. OpenWeatherMap) kann die Funktionalität erheblich erweitern, erfordert jedoch eine sorgfältige Fehlerbehandlung und Sicherheitsüberlegungen.
 
 #### Danke!
@@ -67,5 +74,3 @@ Integration von Drittanbietern: Die Integration von externen Diensten (z. B. Ope
 - Feedback und Anregungen sind willkommen!
 
 ---
-
-Ich hoffe, diese überarbeitete Präsentation passt besser zu Ihren Anforderungen!
