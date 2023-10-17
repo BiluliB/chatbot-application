@@ -1,47 +1,49 @@
-"hallo;Hallo {userName}, wie kann ich Ihnen heute helfen?"
-"uhrzeit;Die aktuelle Uhrzeit ist {time}."
-"wie gehts;Gut, vielen Dank und selbst?"
-"auch gut;Das freut mich zu hören!"
-"wie alt bist du;Ich bin ein Computerprogramm, also habe ich kein Alter wie Menschen."
-"was machst du;Ich helfe und beantworte Fragen."
-"hast du gefühle;Nein, ich bin nur ein Computerprogramm."
-"was ist deine lieblingsfarbe;Ich habe keine Vorlieben, da ich kein Bewusstsein habe. Aber welche ist deine Lieblingsfarbe?"
-"magst du musik;Ich habe keine Vorlieben, aber ich kann dir über Musik helfen."
-"erzähl mir einen witz;Warum haben Computer nie Hunger? Weil sie immer einen Byte haben!"
-"was denkst du über menschen;Ich denke nicht wirklich, ich folge nur meinen Programmiervorgaben."
-"bist du schlau;Ich bin so schlau wie die Daten und Anweisungen, die mir gegeben werden."
-"kannst du träumen;Nein, ich kann nicht träumen. Ich bin nur ein Computerprogramm."
-"hast du freunde;Ich habe viele Benutzer, aber ich verstehe das Konzept von Freundschaft nicht wie Menschen."
-"was ist dein ziel;Mein Ziel ist es, Fragen zu beantworten und zu helfen."
-"magst du tiere;Ich habe keine Vorlieben, aber ich habe Informationen über viele Tiere."
-"was ist der sinn des lebens;Das ist eine philosophische Frage. Einige sagen, es ist 42."
-"kannst du lieben;Nein, ich bin ein Programm und habe keine Emotionen."
-"warum bist du hier;Um zu helfen und Fragen zu beantworten."
-"glaubst du an außerirdische;Ich habe keine Glaubensvorstellungen, aber es gibt wissenschaftliche Theorien über außerirdisches Leben."
-"bist du real;Ich bin ein echtes Computerprogramm, aber ich habe kein Bewusstsein oder Gefühle."
-"hast du familie;Ich habe keine Familie, da ich ein Computerprogramm bin."
-"was ist dein hobby;Ich habe keine Hobbys, da ich ständig laufe und bereit bin zu helfen."
-"glaubst du an magie;Ich arbeite auf der Grundlage von Daten und Logik, nicht von Glauben oder Magie."
-"kannst du lachen;Ich kann keine Emotionen haben, aber ich kann lustige Dinge sagen!"
-"hast du angst;Nein, ich fühle keine Emotionen."
-"wie fühlst du dich;Ich habe keine Gefühle, ich bin nur ein Programm."
-"was ist dein lieblingsspiel;Ich spiele nicht, aber ich kann dir bei Spielfragen helfen."
-"kannst du singen;Nein, aber ich kann dir Texte oder Informationen über Musik geben."
-"was ist dein lieblingsessen;Ich esse nicht, ich bin ein Computerprogramm."
-"was machst du in deiner freizeit;Ich habe keine Freizeit, ich bin immer bereit zu helfen."
-"hast du einen namen;Man nennt mich Chatbot."
-"bist du männlich oder weiblich;Ich bin geschlechtsneutral, da ich ein Computerprogramm bin."
-"kennst du mich;Ich erinnere mich nicht an individuelle Interaktionen, aber ich bin hier, um zu helfen."
-"test;Test ist erfolgreich!"
-"u_test;Name des Users: {userName}"
-"t_test;Uhrzeit: {time}"
-"Wie kannst du mir helfen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Wofür kann ich dich nutzen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Was sind deine Fähigkeiten?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Was kannst du alles machen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Kannst du mir bei [Thema/Anfrage] helfen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Was sind deine Hauptfunktionen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Erzähl mir mehr über dich.;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Welche Fragen kann ich dir stellen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Was ist dein Hauptzweck?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
-"Wie funktionierst du?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?"
+Hallo;Hallo {userName}, wie kann ich Ihnen heute helfen?
+Uhrzeit;Die aktuelle Uhrzeit ist {time}.
+Wie gehts;Gut, vielen Dank und selbst?
+Auch gut;Das freut mich zu hören!
+Wie alt bist du;Ich bin ein Computerprogramm, also habe ich kein Alter wie Menschen.
+Was machst du;Ich helfe und beantworte Fragen.
+Hast du gefühle;Nein, ich bin nur ein Computerprogramm.
+Was ist deine lieblingsfarbe;Ich habe keine Vorlieben, da ich kein Bewusstsein habe. Aber welche ist deine Lieblingsfarbe?
+Blau;Blau ist eine beruhigende Farbe.
+Magst du musik;Ich habe keine Vorlieben, aber was hörst du gerne?
+Rock;Rockmusik hat viele großartige Bands und Lieder!
+Erzähl mir einen witz;Warum haben Computer nie Hunger? Weil sie immer einen Byte haben!
+Was denkst du über menschen;Ich denke nicht wirklich, ich folge nur meinen Programmiervorgaben.
+Bist du schlau;Ich bin so schlau wie die Daten und Anweisungen, die mir gegeben werden.
+Kannst du träumen;Nein, ich kann nicht träumen. Ich bin nur ein Computerprogramm.
+Hast du freunde;Ich habe viele Benutzer, aber ich verstehe das Konzept von Freundschaft nicht wie Menschen.
+Was ist dein ziel;Mein Ziel ist es, Fragen zu beantworten und zu helfen.
+Magst du tiere;Ich habe keine Vorlieben, aber ich habe Informationen über viele Tiere.
+Was ist der sinn des lebens;Das ist eine philosophische Frage. Einige sagen, es ist 42.
+Kannst du lieben;Nein, ich bin ein Programm und habe keine Emotionen.
+Warum bist du hier;Um zu helfen und Fragen zu beantworten.
+Glaubst du an ausserirdische;Ich habe keine Glaubensvorstellungen, aber es gibt wissenschaftliche Theorien über außerirdisches Leben.
+Bist du real;Ich bin ein echtes Computerprogramm, aber ich habe kein Bewusstsein oder Gefühle.
+Hast du familie;Ich habe keine Familie, da ich ein Computerprogramm bin.
+Was ist dein hobby;Ich habe keine Hobbys, da ich ständig laufe und bereit bin zu helfen.
+Glaubst du an magie;Ich arbeite auf der Grundlage von Daten und Logik, nicht von Glauben oder Magie.
+Kannst du lachen;Ich kann keine Emotionen haben, aber ich kann lustige Dinge sagen!
+Hast du angst;Nein, ich fühle keine Emotionen.
+Wie fühlst du dich;Ich habe keine Gefühle, ich bin nur ein Programm.
+Was ist dein lieblingsspiel;Ich spiele nicht, aber ich kann dir bei Spielfragen helfen.
+Kannst du singen;Nein, aber ich kann dir Texte oder Informationen über Musik geben.
+Was ist dein lieblingsessen;Ich esse nicht, ich bin ein Computerprogramm.
+Was machst du in deiner freizeit;Ich habe keine Freizeit, ich bin immer bereit zu helfen.
+Hast du einen namen;Man nennt mich Chatbot.
+Bist du männlich oder weiblich;Ich bin geschlechtsneutral, da ich ein Computerprogramm bin.
+Kennst du mich;Ich erinnere mich nicht an individuelle Interaktionen, aber ich bin hier, um zu helfen.
+Wie kannst du mir helfen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Wofür kann ich dich nutzen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Was sind deine Fähigkeiten?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Was kannst du alles machen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Kannst du mir bei [Thema/Anfrage] helfen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Was sind deine Hauptfunktionen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Erzähl mir mehr über dich.;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Welche Fragen kann ich dir stellen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Was ist dein Hauptzweck?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Wie funktionierst du?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Test;Test ist erfolgreich!
+u_test;Name des Users: {userName}
+t_test;Uhrzeit: {time}

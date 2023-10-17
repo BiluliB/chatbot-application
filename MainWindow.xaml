@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:chatbot_application"
         mc:Ignorable="d"
-        Title="Chatbot" Height="450" Width="800"
+        Title="Chatbot" Height="450" Width="800" MinHeight="400" MinWidth="400"
         Icon="Assets/icon.ico">
     <Grid>
         <Grid.RowDefinitions>
@@ -13,21 +13,26 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <ListBox Name="ChatHistory" Grid.Row="0" Margin="10">
+        <ListBox Name="ChatHistory" Grid.Row="0" Margin="10" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListBox.Resources>
                 <DataTemplate DataType="{x:Type local:UserMessage}">
-                    <TextBlock Margin="5" Foreground="Blue">
-                     <Run FontWeight="Bold" Text="User: "/>
-                     <Run Text="{Binding Text}"/>
+                    <TextBlock Margin="5" Foreground="Blue" TextWrapping="Wrap">
+<Run FontWeight="Bold" Text="User: "/>
+<Run Text="{Binding Text}"/>
                     </TextBlock>
                 </DataTemplate>
                 <DataTemplate DataType="{x:Type local:BotMessage}">
-                    <TextBlock Margin="5" Foreground="Green">
-                     <Run FontWeight="Bold" Text="Bot: "/>
-                     <Run Text="{Binding Text}"/>
+                    <TextBlock Margin="5" Foreground="Green" TextWrapping="Wrap">
+<Run FontWeight="Bold" Text="Bot: "/>
+<Run Text="{Binding Text}"/>
                     </TextBlock>
                 </DataTemplate>
             </ListBox.Resources>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
         </ListBox>
 
         <Grid Grid.Row="1" Margin="10,0">
