@@ -20,7 +20,7 @@
 ### Einführung
 
 #### Chatbot-Application
-- Eine moderne WPF-Anwendung.
+- Eine einfache WPF-Anwendung.
 - Ermöglicht die Interaktion mit einem Chatbot.
 
 ---
