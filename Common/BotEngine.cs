@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.IO;
+using StorageLib;
 
 namespace chatbot_application
 {
@@ -15,7 +16,7 @@ namespace chatbot_application
     {
         private bool isWaitingForLocation = false;
         private string _username;
-        private readonly Storage storage;
+        private readonly IStorage storage;
         private readonly WeatherResponse weatherAPI;
         private readonly string csvFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CsvImport", "keywords.csv");
 
@@ -24,7 +25,7 @@ namespace chatbot_application
         /// </summary>
         public BotEngine(string apiKey)
         {
-            this.storage = new Storage();
+            this.storage = new CsvStorage();
             this.weatherAPI = new WeatherResponse(apiKey);
         }
 

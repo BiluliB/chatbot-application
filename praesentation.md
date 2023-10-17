@@ -44,13 +44,13 @@
 ---
 
 ### Skizze
-![Skizze](./ChatbotSkizze.png)
+![Skizze](.\Assets\ChatbotSkizze.png)
 
 ---
 
 ### UML-Diagramm
 
-![UML-Diagramm](./UMLDiagram.png)
+![UML-Diagramm](.\Assets\UMLDiagram.png)
 
 ---
 
