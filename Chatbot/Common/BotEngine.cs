@@ -23,10 +23,14 @@ namespace chatbot_application
         /// <summary>
         /// Initializes a new instance of the BotEngine class with a specific API key.
         /// </summary>
-        public BotEngine(string apiKey)
+        public BotEngine(string apiKey) : this(new CsvStorage(), new WeatherResponse(apiKey))
         {
-            this.storage = new CsvStorage();
-            this.weatherAPI = new WeatherResponse(apiKey);
+        }
+
+        public BotEngine(IStorage storage, WeatherResponse weatherAPI)
+        {
+            this.storage = storage;
+            this.weatherAPI = weatherAPI;
         }
 
         /// <summary>

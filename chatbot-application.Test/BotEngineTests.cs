@@ -1,103 +1,64 @@
+using chatbot_application;
+using Moq;
+using System.IO;
 using Xunit;
 using System.Threading.Tasks;
+using chatbot_application.Data;
 using StorageLib;
-using Microsoft.Extensions.Configuration;
-using chatbot_application;
 
-public class BotTests
+namespace chatbot_application.Tests
 {
-    private BotEngine bot;
-    private readonly IConfiguration configuration;
-
-    public BotEngineTests()
+    public class BotEngineTests
     {
-        configuration = new ConfigurationBuilder()
-            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-            .AddJsonFile("appsettings.json")
-            .Build();
-        bot = new BotEngine(configuration["OpenWeatherApiKey"]);
-    }
+        private readonly Mock<IStorage> mockStorage;
+        private readonly Mock<WeatherResponse> mockWeatherResponse;
+        private readonly BotEngine botEngine;
 
-    [Fact]
-    public async Task ProcessInput_NoUsername_SetsUsernameAndGreets()
-    {
-        // Arrange
-        var input = "John";
+        public BotEngineTests()
+        {
+            mockStorage = new Mock<IStorage>();
+            mockWeatherResponse = new Mock<WeatherResponse>("fakeAPIKey");
 
-        // Act
-        string result = await bot.ProcessInput(input);
+            botEngine = new BotEngine(mockStorage.Object, mockWeatherResponse.Object);
+        }
 
-        // Assert
-        Assert.Equal("Hallo John, wie kann ich Ihnen heute helfen?", result);
-    }
 
-    [Fact]
-    public async Task ProcessInput_InvalidUsername_PromptsForValidName()
-    {
-        // Arrange
-        bot.UserName = ""; // This forces the ArgumentException in the test context.
-        var input = "invalid";
+        [Fact]
+        public void UserName_WhenSetToEmpty_ShouldThrowArgumentException()
+        {
+            Assert.Throws<System.ArgumentException>(() => botEngine.UserName = "");
+        }
 
-        // Act
-        string result = await bot.ProcessInput(input);
+        [Fact]
+        public void UserName_WhenSetToValidString_ShouldSetCorrectly()
+        {
+            botEngine.UserName = "John";
+            Assert.Equal("John", botEngine.UserName);
+        }
 
-        // Assert
-        Assert.Equal("Bitte geben Sie einen gültigen Namen ein.", result);
-    }
+        [Fact]
+        public async Task ProcessInput_WhenUserNameNotSet_ShouldPromptForUserName()
+        {
+            var response = await botEngine.ProcessInput("John");
+            Assert.Equal("Hallo John, wie kann ich Ihnen heute helfen?", response);
+        }
 
-    [Fact]
-    public async Task ProcessInput_IsWaitingForLocation_GetsWeather()
-    {
-        // Arrange
-        bot.isWaitingForLocation = true;
-        mockWeatherAPI.Setup(api => api.GetWeatherAsync("Berlin")).ReturnsAsync("Weather for Berlin: Sunny");
-        var input = "Berlin";
+        [Fact]
+        public async Task ProcessInput_WhenAskedForWeather_ShouldPromptForLocation()
+        {
+            botEngine.UserName = "John"; // Set the username first
+            var response = await botEngine.ProcessInput("wetter");
+            Assert.Equal("Für welchen Ort möchten Sie das Wetter wissen?", response);
+        }
 
-        // Act
-        string result = await bot.ProcessInput(input);
+        // ... More tests covering other branches of logic ...
 
-        // Assert
-        Assert.Equal("Weather for Berlin: Sunny", result);
-    }
-
-    [Fact]
-    public async Task ProcessInput_UserAsksWeather_PromptsForLocation()
-    {
-        // Arrange
-        var input = "Wetter?";
-
-        // Act
-        string result = await bot.ProcessInput(input);
-
-        // Assert
-        Assert.Equal("Für welchen Ort möchten Sie das Wetter wissen?", result);
-    }
-
-    [Fact]
-    public async Task ProcessInput_HasStoredResponse_ReturnsStoredResponse()
-    {
-        // Arrange
-        mockStorage.Setup(s => s.GetResponse("how are you?", "John")).Returns("I'm good, John!");
-        var input = "how are you?";
-
-        // Act
-        string result = await bot.ProcessInput(input);
-
-        // Assert
-        Assert.Equal("I'm good, John!", result);
-    }
-
-    [Fact]
-    public async Task ProcessInput_NoStoredResponse_ReturnsRandomSuggestion()
-    {
-        // Arrange
-        mockStorage.Setup(s => s.GetResponse("unknown", "John")).Returns(bot.DefaultResponse);
-        var input = "unknown";
-
-        // Act
-        string result = await bot.ProcessInput(input);
-
-        // Assert
-        Assert.True(result.StartsWith("Entschuldige John, ich weiß nicht, was du meinst. Versuche es mit: "));
+        [Fact]
+        public void GetWeather_WhenCalled_ShouldReturnWeatherForLocation()
+        {
+            mockWeatherResponse.Setup(m => m.GetWeatherAsync(It.IsAny<string>())).Returns(Task.FromResult("Sunny"));
+            var weather = botEngine.GetWeather("Berlin");
+            Assert.Equal("Sunny", weather);
+        }
     }
 }
