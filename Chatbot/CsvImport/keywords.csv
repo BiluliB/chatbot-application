@@ -1,5 +1,6 @@
 Hallo;Hallo {userName}, wie kann ich Ihnen heute helfen?
 Uhrzeit;Die aktuelle Uhrzeit ist {time}.
+Datum; Heute ist der {date}.
 Wie gehts;Gut, vielen Dank und selbst?
 Wie geht;Gut, vielen Dank und selbst?
 Auch gut;Das freut mich zu hören!

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StorageLib
+﻿namespace StorageLib
 {
     /// <summary>
     /// Represents a message with keyword-response pairs and provides functionality 
@@ -36,6 +30,12 @@ namespace StorageLib
             if (processedAnswer.Contains("{time}"))
             {
                 processedAnswer = processedAnswer.Replace("{time}", DateTime.Now.ToString("HH:mm"));
+            }
+
+            // Replace {time} placeholder with current time.
+            if (processedAnswer.Contains("{date}"))
+            {
+                processedAnswer = processedAnswer.Replace("{date}", DateTime.Now.ToString("dd.MM.yyyy"));
             }
 
             // Replace {userName} placeholder with the provided userName.

@@ -1,8 +1,4 @@
-﻿using StorageLib;
-using Xunit;
-using System.IO;
-
-namespace StorageLib.Tests
+﻿namespace StorageLib.Tests
 {
     public class StorageTests
     {

@@ -1,15 +1,11 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Input;
-using Newtonsoft.Json.Linq;
-using Microsoft.Extensions.Configuration;
-using System.Windows.Controls;
-using System.Windows.Media;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.IO;
 using System.Text;
-using StorageLib;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
 
 namespace chatbot_application
 {
@@ -88,9 +84,13 @@ namespace chatbot_application
             ChatHistory.Items.Add(new BotMessage { Text = "Hallo! Wie darf ich Sie nennen?" });
         }
 
+        /// <summary>
+        /// Deactivate send button if textinput is empty
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserInput_TextChanged(object sender, TextChangedEventArgs e)
         {
-            // Deaktivieren Sie den Button, wenn das Textfeld leer ist oder nur Leerzeichen enthält.
             SendButton.IsEnabled = !string.IsNullOrWhiteSpace(UserInput.Text);
         }
 

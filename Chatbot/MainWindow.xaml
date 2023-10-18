@@ -52,7 +52,7 @@
 
             <Button 
                 x:Name="SendButton"
-                Content="Send" 
+                Content="Senden" 
                  Grid.Column="1" 
                  Width="87" 
                  Margin="10,0,0,10" 
