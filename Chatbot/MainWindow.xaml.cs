@@ -26,7 +26,7 @@ namespace chatbot_application
         public MainWindow()
         {
             InitializeComponent();
-
+            
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
                 .AddJsonFile("appsettings.json")
@@ -37,6 +37,7 @@ namespace chatbot_application
 
             botEngine = new BotEngine(configuration["OpenWeatherMapApiKey"]);
 
+            UserInput_TextChanged(null, null);
         }
 
         /// <summary>
@@ -87,13 +88,18 @@ namespace chatbot_application
             ChatHistory.Items.Add(new BotMessage { Text = "Hallo! Wie darf ich Sie nennen?" });
         }
 
+        private void UserInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // Deaktivieren Sie den Button, wenn das Textfeld leer ist oder nur Leerzeichen enthält.
+            SendButton.IsEnabled = !string.IsNullOrWhiteSpace(UserInput.Text);
+        }
 
         /// <summary>
         /// Handles the KeyDown event of the UserInput control.
         /// </summary>
         private void UserInput_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
+            if (e.Key == Key.Enter && SendButton.IsEnabled)
             {
                 SendMessage();
             }

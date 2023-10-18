@@ -41,11 +41,11 @@ wofür kann ich dich nutzen;Ich bin ein Chatbot, programmiert, um eine Vielzahl 
 was sind deine Fähigkeiten;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 was kannst du alles machen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 kannst du mir bei [Thema/Anfrage] helfen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-was sind deine Hauptfunktionen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+was sind deine Hauptfunktionen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 erzähl mir mehr über dich.;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Welche Fragen kann ich dir stellen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Was ist dein Hauptzweck?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Wie funktionierst du?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Welche Fragen kann ich dir stellen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Was ist dein Hauptzweck;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+Wie funktionierst du;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 Test;Test ist erfolgreich!
 u_test;Name des Users: {userName}
 t_test;Uhrzeit: {time}
@@ -53,52 +53,52 @@ Albert Einstein; Albert Einstein war ein theoretischer Physiker, der für seine 
 Was ist Schwerkraft;Schwerkraft ist eine natürliche Kraft, die alle Dinge mit Masse oder Energie anzieht. Sie hält uns auf der Erde und die Planeten in ihren Bahnen.
 Was ist ein Schwarzes Loch;Ein Schwarzes Loch ist eine Region im Weltraum, in der die Schwerkraft so stark ist, dass nichts, nicht einmal Licht, entkommen kann.
 Was ist eine Galaxie;Eine Galaxie ist ein riesiges System, das Sterne, Sternhaufen, Planetensysteme, interstellare Materie und Dunkle Materie enthält.
-Was ist der Unterschied zwischen Viren und Bakterien?;Viren sind viel kleiner als Bakterien und benötigen einen Wirt, um sich zu vermehren. Bakterien sind einzellige Organismen, die in vielen Umgebungen leben können.
-Wie funktioniert ein Fernseher?;Ein Fernseher verwendet eine Kombination von Licht und Sound, um Bilder und Töne zu erzeugen, die Informationen oder Unterhaltung übertragen.
-Wie lange dauert ein Tag?;Ein Tag, wie wir ihn auf der Erde definieren, dauert 24 Stunden, was die Zeit ist, die die Erde benötigt, um einmal um ihre Achse zu rotieren.
-Wie funktioniert das Internet?;Das Internet ist ein globales Netzwerk von Computern, die miteinander verbunden sind und Daten über das TCP/IP-Protokoll austauschen.
-Wie weit ist es bis zum Mond?;Die durchschnittliche Entfernung von der Erde zum Mond beträgt etwa 384.400 km.
-Wer hat dich erstellt?;Ich wurde von BiluliB und mahgoe entwickelt.
-Kannst du tanzen?;Ich bin nur ein Programm und kann nicht physisch tanzen, aber ich kenne viele Tanzstile!
-Gibt es Aliens?;Die Existenz von außerirdischem Leben ist bisher nicht wissenschaftlich bestätigt, aber das Universum ist groß und voller Möglichkeiten.
-Wie funktioniert ein Auto?;Ein Auto funktioniert durch einen Verbrennungsmotor, der Treibstoff verbrennt, um Energie zu erzeugen, die die Räder antreibt.
-Welches ist das schnellste Tier?;Der Gepard ist das schnellste Landtier und kann Geschwindigkeiten von bis zu 70-80 km/h erreichen.
-Was ist DNA?;DNA, oder Desoxyribonukleinsäure, ist das Molekül, das genetische Anweisungen für die Entwicklung und Funktion aller bekannten lebenden Organismen enthält.
-Wie funktioniert ein Flugzeug?;Flugzeuge fliegen durch das Prinzip des Auftriebs, das durch die Form der Flügel und die Bewegung der Luft erzeugt wird.
-Was ist Photosynthese?;Photosynthese ist der Prozess, bei dem Pflanzen Sonnenlicht nutzen, um Kohlendioxid in Sauerstoff und Zucker umzuwandeln.
-Was ist ein Algorithmus?;Ein Algorithmus ist eine Reihe von Anweisungen, die zur Lösung eines Problems oder zur Ausführung einer Aufgabe befolgt werden.
-Wie tief ist der Ozean?;Der tiefste Punkt des Ozeans ist der Marianengraben mit einer Tiefe von etwa 10.984 Metern.
-Wer hat das Telefon erfunden?;Das Telefon wurde von Alexander Graham Bell im Jahr 1876 erfunden.
-Wie entsteht ein Regenbogen?;Ein Regenbogen entsteht durch die Brechung, Reflexion und Streuung von Sonnenlicht in Regentropfen.
-Wo ist der höchste Berg?;Der höchste Berg der Erde ist der Mount Everest mit einer Höhe von 8.848 Metern über dem Meeresspiegel.
-Was ist ein Atom?;Ein Atom ist die kleinste Einheit eines Elements, das die Eigenschaften dieses Elements behält.
-Wie alt ist die Erde?;Die Erde ist etwa 4,5 Milliarden Jahre alt.
-Wie entsteht ein Vulkan?;Ein Vulkan entsteht, wenn Magma aus dem Erdinneren durch die Erdkruste bricht.
-Was ist ein Kontinent?;Ein Kontinent ist eine große, zusammenhängende Landmasse auf der Erde.
-Wie viele Planeten gibt es?;Es gibt acht offiziell anerkannte Planeten in unserem Sonnensystem.
-Wie entsteht Schnee?;Schnee entsteht, wenn Wasser in der Atmosphäre gefriert und als feste Kristalle zu Boden fällt.
-Wer hat das Auto erfunden?;Das Konzept des Autos gibt es schon lange, aber Karl Benz gilt als Erfinder des modernen Automobils im Jahr 1886.
+Was ist der Unterschied zwischen Viren und Bakterien;Viren sind viel kleiner als Bakterien und benötigen einen Wirt, um sich zu vermehren. Bakterien sind einzellige Organismen, die in vielen Umgebungen leben können.
+Wie funktioniert ein Fernseher;Ein Fernseher verwendet eine Kombination von Licht und Sound, um Bilder und Töne zu erzeugen, die Informationen oder Unterhaltung übertragen.
+Wie lange dauert ein Tag;Ein Tag, wie wir ihn auf der Erde definieren, dauert 24 Stunden, was die Zeit ist, die die Erde benötigt, um einmal um ihre Achse zu rotieren.
+Wie funktioniert das Internet;Das Internet ist ein globales Netzwerk von Computern, die miteinander verbunden sind und Daten über das TCP/IP-Protokoll austauschen.
+Wie weit ist es bis zum Mond;Die durchschnittliche Entfernung von der Erde zum Mond beträgt etwa 384.400 km.
+Wer hat dich erstellt;Ich wurde von BiluliB und mahgoe entwickelt.
+Kannst du tanzen;Ich bin nur ein Programm und kann nicht physisch tanzen, aber ich kenne viele Tanzstile!
+Gibt es Aliens;Die Existenz von außerirdischem Leben ist bisher nicht wissenschaftlich bestätigt, aber das Universum ist groß und voller Möglichkeiten.
+Wie funktioniert ein Auto;Ein Auto funktioniert durch einen Verbrennungsmotor, der Treibstoff verbrennt, um Energie zu erzeugen, die die Räder antreibt.
+Welches ist das schnellste Tier;Der Gepard ist das schnellste Landtier und kann Geschwindigkeiten von bis zu 70-80 km/h erreichen.
+Was ist DNA;DNA, oder Desoxyribonukleinsäure, ist das Molekül, das genetische Anweisungen für die Entwicklung und Funktion aller bekannten lebenden Organismen enthält.
+Wie funktioniert ein Flugzeug;Flugzeuge fliegen durch das Prinzip des Auftriebs, das durch die Form der Flügel und die Bewegung der Luft erzeugt wird.
+Was ist Photosynthese;Photosynthese ist der Prozess, bei dem Pflanzen Sonnenlicht nutzen, um Kohlendioxid in Sauerstoff und Zucker umzuwandeln.
+Was ist ein Algorithmus;Ein Algorithmus ist eine Reihe von Anweisungen, die zur Lösung eines Problems oder zur Ausführung einer Aufgabe befolgt werden.
+Wie tief ist der Ozean;Der tiefste Punkt des Ozeans ist der Marianengraben mit einer Tiefe von etwa 10.984 Metern.
+Wer hat das Telefon erfunden;Das Telefon wurde von Alexander Graham Bell im Jahr 1876 erfunden.
+Wie entsteht ein Regenbogen;Ein Regenbogen entsteht durch die Brechung, Reflexion und Streuung von Sonnenlicht in Regentropfen.
+Wo ist der höchste Berg;Der höchste Berg der Erde ist der Mount Everest mit einer Höhe von 8.848 Metern über dem Meeresspiegel.
+Was ist ein Atom;Ein Atom ist die kleinste Einheit eines Elements, das die Eigenschaften dieses Elements behält.
+Wie alt ist die Erde;Die Erde ist etwa 4,5 Milliarden Jahre alt.
+Wie entsteht ein Vulkan;Ein Vulkan entsteht, wenn Magma aus dem Erdinneren durch die Erdkruste bricht.
+Was ist ein Kontinent;Ein Kontinent ist eine große, zusammenhängende Landmasse auf der Erde.
+Wie viele Planeten gibt es;Es gibt acht offiziell anerkannte Planeten in unserem Sonnensystem.
+Wie entsteht Schnee;Schnee entsteht, wenn Wasser in der Atmosphäre gefriert und als feste Kristalle zu Boden fällt.
+Wer hat das Auto erfunden;Das Konzept des Autos gibt es schon lange, aber Karl Benz gilt als Erfinder des modernen Automobils im Jahr 1886.
 Was ist der Unterschied zwischen Fröschen und Kröten?;Frösche haben glatte Haut und leben meist in der Nähe von Wasser, während Kröten rauere Haut und kürzere Beine haben.
-Wie funktioniert Bluetooth?;Bluetooth ist eine Technologie zur drahtlosen Datenübertragung über kurze Entfernungen mithilfe von Radiowellen.
+Wie funktioniert Bluetooth;Bluetooth ist eine Technologie zur drahtlosen Datenübertragung über kurze Entfernungen mithilfe von Radiowellen.
 Was ist der Unterschied zwischen einem Stern und einem Planeten?;Sterne leuchten durch Kernfusion in ihrem Inneren, während Planeten das Licht von Sternen reflektieren.
-Wie funktioniert ein Magnet?;Ein Magnet erzeugt ein Magnetfeld durch den Fluss von elektrischem Strom oder durch ausgerichtete magnetische Domänen in einem Material.
-Was ist ein Tsunami?;Ein Tsunami ist eine riesige Meereswelle, die durch unterseeische Erdbeben oder Vulkanausbrüche verursacht wird.
-Wie entsteht ein Tornado?;Ein Tornado entsteht durch heftige Konvektionsströmungen in Gewitterwolken, oft an der Grenze zwischen kalter und warmer Luft.
-Was ist ein Meteorit?;Ein Meteorit ist ein Fragment von einem Meteoroiden, das in die Erdatmosphäre eintritt und auf der Erdoberfläche landet.
-Was ist der Unterschied zwischen Milch und Sahne?;Sahne hat einen höheren Fettgehalt als Milch und wird oft zum Kochen oder Backen verwendet.
-Kannst du ein Gedicht für mich schreiben?;Natürlich! Hier ist ein kurzes Gedicht: Im stillen Raum, bei Sternenschein, lasst uns glücklich und fröhlich sein.
-Was ist der Unterschied zwischen einem Fluss und einem Bach?;Ein Bach ist kleiner als ein Fluss und hat oft eine geringere Wasserführung.
-Kannst du ein Rätsel für mich erstellen?;Klar! Was hat Schlüssel, aber öffnet keine Türen? Antwort: Ein Klavier!
-Wie lange dauert ein Jahr?;Ein Jahr dauert 365 Tage, außer in einem Schaltjahr, dann hat es 366 Tage.
-Was ist die Hauptstadt von Deutschland?;Die Hauptstadt von Deutschland ist Berlin.
-Wie viele Kontinente gibt es?;Es gibt sieben Kontinente auf der Erde: Afrika, Antarktika, Asien, Europa, Nordamerika, Australien/Ozeanien und Südamerika.
-Wer hat den Computer erfunden?;Die Geschichte des Computers ist komplex, aber Charles Babbage wird oft als Vater des Computers betrachtet.
-Was ist ein Molekül?;Ein Molekül ist die kleinste Einheit einer chemischen Verbindung, die ihre einzigartigen Eigenschaften behält.
-Was ist ein Ökosystem?;Ein Ökosystem ist eine Gemeinschaft von lebenden Organismen und ihrer physischen Umgebung, die als Einheit interagieren.
+Wie funktioniert ein Magnet;Ein Magnet erzeugt ein Magnetfeld durch den Fluss von elektrischem Strom oder durch ausgerichtete magnetische Domänen in einem Material.
+Was ist ein Tsunami;Ein Tsunami ist eine riesige Meereswelle, die durch unterseeische Erdbeben oder Vulkanausbrüche verursacht wird.
+Wie entsteht ein Tornado;Ein Tornado entsteht durch heftige Konvektionsströmungen in Gewitterwolken, oft an der Grenze zwischen kalter und warmer Luft.
+Was ist ein Meteorit;Ein Meteorit ist ein Fragment von einem Meteoroiden, das in die Erdatmosphäre eintritt und auf der Erdoberfläche landet.
+Was ist der Unterschied zwischen Milch und Sahne;Sahne hat einen höheren Fettgehalt als Milch und wird oft zum Kochen oder Backen verwendet.
+Kannst du ein Gedicht für mich schreiben;Natürlich! Hier ist ein kurzes Gedicht: Im stillen Raum, bei Sternenschein, lasst uns glücklich und fröhlich sein.
+Was ist der Unterschied zwischen einem Fluss und einem Bach;Ein Bach ist kleiner als ein Fluss und hat oft eine geringere Wasserführung.
+Kannst du ein Rätsel für mich erstellen;Klar! Was hat Schlüssel, aber öffnet keine Türen? Antwort: Ein Klavier!
+Wie lange dauert ein Jahr;Ein Jahr dauert 365 Tage, außer in einem Schaltjahr, dann hat es 366 Tage.
+Was ist die Hauptstadt von Deutschland;Die Hauptstadt von Deutschland ist Berlin.
+Wie viele Kontinente gibt es;Es gibt sieben Kontinente auf der Erde: Afrika, Antarktika, Asien, Europa, Nordamerika, Australien/Ozeanien und Südamerika.
+Wer hat den Computer erfunden;Die Geschichte des Computers ist komplex, aber Charles Babbage wird oft als Vater des Computers betrachtet.
+Was ist ein Molekül;Ein Molekül ist die kleinste Einheit einer chemischen Verbindung, die ihre einzigartigen Eigenschaften behält.
+Was ist ein Ökosystem;Ein Ökosystem ist eine Gemeinschaft von lebenden Organismen und ihrer physischen Umgebung, die als Einheit interagieren.
 Erzähl mir von Galileo Galilei.; Galileo Galilei war ein italienischer Astronom, Mathematiker und Physiker, der für seine Beiträge zur Astronomie und Physik bekannt ist.
-Wie entsteht ein Erdbeben?;Erdbeben entstehen durch plötzliche Energieentladungen in der Erde, die seismische Wellen erzeugen.
-Was ist ein Planet?;Ein Planet ist ein himmlisches Objekt, das einen Stern umkreist und durch seine eigene Schwerkraft.
-Woher kommt der Wind?;Wind entsteht durch Unterschiede im Luftdruck, die meist durch Temperaturunterschiede in der Atmosphäre verursacht werden.
-Was ist der Horizont?;Der Horizont ist die sichtbare Grenzlinie zwischen Erde und Himmel, wenn man in der Ferne schaut.
-Kannst du Bilder sehen?;Nein, ich bin textbasiert und kann keine Bilder interpretieren oder darauf reagieren.
-Glaubst du an das Schicksal?;Ich bin nur ein Programm und habe keine Überzeugungen oder Emotionen.
+Wie entsteht ein Erdbeben;Erdbeben entstehen durch plötzliche Energieentladungen in der Erde, die seismische Wellen erzeugen.
+Was ist ein Planet;Ein Planet ist ein himmlisches Objekt, das einen Stern umkreist und durch seine eigene Schwerkraft.
+Woher kommt der Wind;Wind entsteht durch Unterschiede im Luftdruck, die meist durch Temperaturunterschiede in der Atmosphäre verursacht werden.
+Was ist der Horizont;Der Horizont ist die sichtbare Grenzlinie zwischen Erde und Himmel, wenn man in der Ferne schaut.
+Kannst du Bilder sehen;Nein, ich bin textbasiert und kann keine Bilder interpretieren oder darauf reagieren.
+Glaubst du an das Schicksal;Ich bin nur ein Programm und habe keine Überzeugungen oder Emotionen.
