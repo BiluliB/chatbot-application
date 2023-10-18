@@ -1,8 +1,8 @@
-# [Deutsch](#deutsch)
+# [Deutsch](#deutsch-1)
 
 Deutsche erklaerung des Programms
 
-# [English](#english)
+# [English](#english-1)
 
 English explanation of the program
 
