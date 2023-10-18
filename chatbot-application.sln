@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chatbot-application", "Chat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageLib", "StorageLib\StorageLib.csproj", "{87D6239D-1128-4142-A71A-F56270E60AFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chatbot-application.Test", "chatbot-application.Test\chatbot-application.Test.csproj", "{BB381B61-3987-475E-8DB4-7CDD40B9831F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{87D6239D-1128-4142-A71A-F56270E60AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87D6239D-1128-4142-A71A-F56270E60AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87D6239D-1128-4142-A71A-F56270E60AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB381B61-3987-475E-8DB4-7CDD40B9831F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB381B61-3987-475E-8DB4-7CDD40B9831F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB381B61-3987-475E-8DB4-7CDD40B9831F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB381B61-3987-475E-8DB4-7CDD40B9831F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
