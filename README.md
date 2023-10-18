@@ -127,6 +127,7 @@ After launching the application, the user can communicate with the bot by enteri
 - Greeting: "hello"
 - Farewell: "goodbye"
 - Time: "time"
-- Date: "date" Weather information: "weather", "What's the weather like today?"
+- Date: "date"
+- Weather information: "weather", "What's the weather like today?"
 
 The bot will ask the user for the location for which they want to know the weather. The user should simply enter the name of the city.
