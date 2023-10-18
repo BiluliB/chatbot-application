@@ -1,6 +1,6 @@
 # [Deutsch](#deutsch-1)
 
-Deutsche erklaerung des Programms
+Deutsche Erklärung des Programms
 
 # [English](#english-1)
 
@@ -15,7 +15,7 @@ Ein einfacher Chatbot, der mit WPF erstellt wurde. Der Bot kann einfache Konvers
 ### Anforderungen
 
 - .NET 7.0 SDK
-- Visual Studio 2022 oder ein aequivalenter Editor
+- Visual Studio 2022 oder ein äquivalenter Editor
 
 ### Installation
 
@@ -48,7 +48,7 @@ Der API-Schluessel sollte wie folgt eingegeben werden:
 ```
 
 Dann sollte man die `appsettings.json` Datei im Solution Explorer von Visual Studio rechtsklicken.
-Die **Properties** sollten ausgewaehlt werden.
+Die **Properties** sollten ausgewählt werden.
 Es sollte sichergestellt werden, dass die **Copy to Output Directory**-Eigenschaft auf **Copy if newer** eingestellt ist.
 Ausserdem sollte sichergestellt werden, dass `appsettings.json` in der `.gitignore`-Datei enthalten ist.
 
