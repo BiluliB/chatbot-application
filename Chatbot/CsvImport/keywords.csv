@@ -1,7 +1,9 @@
 Hallo;Hallo {userName}, wie kann ich Ihnen heute helfen?
 Uhrzeit;Die aktuelle Uhrzeit ist {time}.
 Wie gehts;Gut, vielen Dank und selbst?
+Wie geht;Gut, vielen Dank und selbst?
 Auch gut;Das freut mich zu hören!
+Danke;Bitte, wie kann ich Ihnen weiter helfen?
 Wie alt bist du;Ich bin ein Computerprogramm, also habe ich kein Alter wie Menschen.
 Was machst du;Ich helfe und beantworte Fragen.
 Hast du gefühle;Nein, ich bin nur ein Computerprogramm.
@@ -34,23 +36,23 @@ Was machst du in deiner freizeit;Ich habe keine Freizeit, ich bin immer bereit z
 Hast du einen namen;Man nennt mich Chatbot.
 Bist du männlich oder weiblich;Ich bin geschlechtsneutral, da ich ein Computerprogramm bin.
 Kennst du mich;Ich erinnere mich nicht an individuelle Interaktionen, aber ich bin hier, um zu helfen.
-Wie kannst du mir helfen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Wofür kann ich dich nutzen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Was sind deine Fähigkeiten?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Was kannst du alles machen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Kannst du mir bei [Thema/Anfrage] helfen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Was sind deine Hauptfunktionen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
-Erzähl mir mehr über dich.;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+wie kannst du mir helfen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+wofür kann ich dich nutzen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+was sind deine Fähigkeiten;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+was kannst du alles machen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+kannst du mir bei [Thema/Anfrage] helfen;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+was sind deine Hauptfunktionen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
+erzähl mir mehr über dich.;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 Welche Fragen kann ich dir stellen?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 Was ist dein Hauptzweck?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 Wie funktionierst du?;Ich bin ein Chatbot, programmiert, um eine Vielzahl von Fragen zu beantworten und Informationen bereitzustellen. Sie können mich nach dem Wetter fragen, mir allgemeine Fragen stellen oder mich nach bestimmten Informationen fragen. Wie kann ich Ihnen heute helfen?
 Test;Test ist erfolgreich!
 u_test;Name des Users: {userName}
 t_test;Uhrzeit: {time}
-Erzähl mir von Einstein.; Albert Einstein war ein theoretischer Physiker, der für seine Relativitätstheorie bekannt ist. Er erhielt den Nobelpreis für Physik im Jahr 1921.
-Was ist Schwerkraft?;Schwerkraft ist eine natürliche Kraft, die alle Dinge mit Masse oder Energie anzieht. Sie hält uns auf der Erde und die Planeten in ihren Bahnen.
-Was ist ein Schwarzes Loch?;Ein Schwarzes Loch ist eine Region im Weltraum, in der die Schwerkraft so stark ist, dass nichts, nicht einmal Licht, entkommen kann.
-Was ist eine Galaxie?;Eine Galaxie ist ein riesiges System, das Sterne, Sternhaufen, Planetensysteme, interstellare Materie und Dunkle Materie enthält.
+Albert Einstein; Albert Einstein war ein theoretischer Physiker, der für seine Relativitätstheorie bekannt ist. Er erhielt den Nobelpreis für Physik im Jahr 1921.
+Was ist Schwerkraft;Schwerkraft ist eine natürliche Kraft, die alle Dinge mit Masse oder Energie anzieht. Sie hält uns auf der Erde und die Planeten in ihren Bahnen.
+Was ist ein Schwarzes Loch;Ein Schwarzes Loch ist eine Region im Weltraum, in der die Schwerkraft so stark ist, dass nichts, nicht einmal Licht, entkommen kann.
+Was ist eine Galaxie;Eine Galaxie ist ein riesiges System, das Sterne, Sternhaufen, Planetensysteme, interstellare Materie und Dunkle Materie enthält.
 Was ist der Unterschied zwischen Viren und Bakterien?;Viren sind viel kleiner als Bakterien und benötigen einen Wirt, um sich zu vermehren. Bakterien sind einzellige Organismen, die in vielen Umgebungen leben können.
 Wie funktioniert ein Fernseher?;Ein Fernseher verwendet eine Kombination von Licht und Sound, um Bilder und Töne zu erzeugen, die Informationen oder Unterhaltung übertragen.
 Wie lange dauert ein Tag?;Ein Tag, wie wir ihn auf der Erde definieren, dauert 24 Stunden, was die Zeit ist, die die Erde benötigt, um einmal um ihre Achse zu rotieren.
