@@ -32,7 +32,7 @@ namespace chatbot_application.Data
         /// </summary>
         /// <param name="location">The location for which to fetch the weather data.</param>
         /// <returns>A string representation of the weather in the given location.</returns>
-        public async Task<string> GetWeatherAsync(string location)
+        public virtual async Task<string> GetWeatherAsync(string location)
         {
             string requestUrl = $"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={apiKey}&units=metric&lang=de";
 
